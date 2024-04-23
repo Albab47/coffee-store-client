@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader: () => fetch("http://localhost:5000/coffee"),
+        loader: () => fetch("https://coffee-store-server-ten-theta.vercel.app/coffee"),
       },
       {
         path: "/add-coffee",
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         path: "/update-coffee/:id",
         element: <UpdateCoffee />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/coffee/${params.id}`),
+          fetch(`https://coffee-store-server-ten-theta.vercel.app/coffee/${params.id}`),
       },
       {
         path: "/sign-up",
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/users",
         element: <Users />,
-        loader: () => fetch('http://localhost:5000/users')
+        loader: () => fetch("https://coffee-store-server-ten-theta.vercel.app/users"),
       },
     ],
   },

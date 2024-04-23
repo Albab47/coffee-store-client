@@ -10,7 +10,7 @@ const useCoffees = () => {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/coffee")
+    fetch("https://coffee-store-server-ten-theta.vercel.app/coffee")
       .then(res => res.json())
       .then((data) => {
         console.log(data);
